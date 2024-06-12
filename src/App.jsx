@@ -2,11 +2,12 @@
 // --------------------------------------
 // (not including external frameworks or processors)
 
-import Button from "./Button";
-
 // 1. EXTERNAL
 // 2. MODULES
 // 3. INLINE
+
+import Button from "./Button/Button.jsx";
+
 
 
 function App() {
