@@ -1,8 +1,18 @@
+import ProtoTypes from 'prop-types';
 
 function UserGreeting(props){
 
-    return(props.isLoggedIn ? <h2 className="welcome-message">Welcome {props.username}</h2> :
-                              <h2 className="login-prompt">Please log in to continue</h2>);
-}
+    const welcomeMessage = <h2 className="welcome-message">Welcome {props.username}</h2>;
+    const loginPrompt = <h2 className="login-prompt">Please log in to continue</h2>;
 
-export default UserGreeting
+    return(props.isLoggedIn ? welcomeMessage : loginPrompt);
+}
+UserGreeting.prototypes = {
+    isLoggedIn: ProtoTypes.bool,
+    username: ProtoTypes.string,
+}
+UserGreeting.defaultProps = {
+    isLoggedIn: false,
+    username: "Guest"
+}
+export default UserGreeting 
