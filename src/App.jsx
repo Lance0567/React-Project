@@ -1,14 +1,16 @@
-import Student from "./Student.jsx";
+/*
+ conditional rendering = allows you to control what gets rendered
+         in your application based on certain conditions
+         (show, hide, or change components)
+*/
+
+import UserGreeting from "./UserGreeting";
+
 
 function App() {
   return(
     <>
-      <Student name="Francis" age={30} isStudent={true}/>
-      <Student name="Alfonz" age={42} isStudent={false}/>
-      <Student name="Angel" age={50} isStudent={false}/>
-      <Student name="Justin" age={27} isStudent={true}/>
-
-      <Student/>
+      <UserGreeting isLoggedIn={false} username="Lance09"/>
     </>
   );
 }
