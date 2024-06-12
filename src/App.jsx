@@ -1,13 +1,12 @@
-import Food from "./Food.jsx";
-import Footer from "./Footer.jsx";
-import Header from "./Header.jsx"
+import Card from "./Card";
+
 
 function App() {
   return(
-    <> {/*This is called fragment so that you can return multiple*/}
-      <Header/>
-      <Footer/>
-      <Food/>
+    <>
+      <Card/>
+      <Card/>
+      <Card/>
     </>
   );
 }
